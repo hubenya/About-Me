@@ -39,14 +39,14 @@ var kids = prompt('This is a yes/no question. Do you think I have kids?').toLowe
     if (kids === 'yes') {
     alert('You are correct, I have one baby girl.');
     } else if (kids === 'no') {
-    alert('Nice try.');
+    alert('Nice try but I actually do.');
     } else {
     alert(user + ' It appears that you did not answer the question.');
     }
 
 var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase();
   console.log('user funFact:' + funFact);
-    if (funFact === 'fishing' || 'snowboarding') {
+    if (funFact === 'fishing' && 'snowboarding') {
     alert('Nice try but I don\'t do either of them.');
     } else {
     alert(user + ' It appears that you did not answer the question.');
