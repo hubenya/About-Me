@@ -1,5 +1,5 @@
 'use strict' ;
-
+/*
 var user = prompt('What is your name?');
   console.log('user:' + user);
   alert('Hi there, ' + user + ', I\'m going to ask you few question about me.');
@@ -51,3 +51,4 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     } else {
     alert(user + ' It appears that you did not answer the question.');
   }
+*/

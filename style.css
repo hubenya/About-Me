@@ -17,7 +17,7 @@ nav {
   margin: 0px;
 }
 
-li {
+nav li {
   display: inline-table;
   padding: 0px 15px 0px 15px;
 }
@@ -37,11 +37,12 @@ img {
   border: 3px solid #665544;
 }
 
-h2 {
+h2, h3, h4 {
   font-size: 20px;
   margin-bottom: 10px;
   font-family: cursive;
 }
+
 main p {
   font-size: 20px;
   color: blue;
