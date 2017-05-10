@@ -2,7 +2,6 @@ header {
   background: #444;
   color: #fff;
   padding: 5px;
-
 }
 
 h1 {
@@ -10,6 +9,13 @@ h1 {
   margin-bottom: 6px;
   text-align: center;
 }
+
+h2, h3, h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
 nav {
   padding: 3px;
   font-size: 25px;
@@ -21,26 +27,9 @@ nav li {
   display: inline-table;
   padding: 0px 15px 0px 15px;
 }
-p {
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
 
 main {
   margin-left: 30px;
-}
-img {
-  height: 230px;
-  width: auto;
-  padding: 10px;
-  border-radius: 20%;
-  border: 3px solid #665544;
-}
-
-h2, h3, h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-family: cursive;
 }
 
 main p {
@@ -48,4 +37,16 @@ main p {
   color: blue;
   padding-bottom: 20px;
   text-rendering: auto;
+}
+p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+img {
+  height: 230px;
+  width: auto;
+  padding: 10px;
+  border-radius: 20%;
+  border: 3px solid #665544;
 }

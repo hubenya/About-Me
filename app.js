@@ -88,10 +88,10 @@ while (number !== 2007) {
     alert('enter a number pleas');
     counter++;
   }else {
-    alert('I want to congradulate you on remembering the year I graduated.')
+    alert('I want to congradulate you on remembering the year I graduated. I can see that you have tried to guess this ' + counter + ' times.')
 
   }
 }
 
 console.log('counter', counter);
-  alert('counter');
+  //alert('counter');
