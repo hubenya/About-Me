@@ -29,7 +29,7 @@ var highSchool = prompt('What year do you think I graduated from high school?  I
     if (highSchool === '2007') {
     alert('Nice job. How did you know? Where you in my class?');
     } else if (highSchool === '2001' || '2015') {
-    alert('Nice try.');
+    alert('Nice try but I graduated in 2007.');
     } else {
     alert(user + ' It appears that you did not answer the question.');
     }
@@ -51,4 +51,47 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     } else {
     alert(user + ' It appears that you did not answer the question.');
   }
-*/
+
+// this is my for loop using car brands.
+var favCarBrand = ['Toyota', 'Honda', 'RAM', 'Acura', 'Nissan', 'Tesla'];
+var answer = prompt('What is my favorite car maker brand?');
+var flag;
+
+for (var i=0; i < favCarBrand.length; i++){
+  console.log('current thing:', favCarBrand[i]);
+  if (answer === favCarBrand[i]){
+    alert('Nice job! You know what my fav car brand is!');
+    flag = true;
+    break;
+  }
+
+}
+
+if (!flag) {
+  alert('Nope - you are wrong!');
+}*/
+// here is where i added while loop
+var number;
+var counter = 1;
+
+while (number !== 2007) {
+  number = parseInt(prompt('Do you remember what year I graduated from school? It was one of earlier questions.'));
+  //number = prompt('Do you rememner what year I graduated from school? It was one of the questions earlier.');
+
+  if (number < 2007) {
+    alert('You are a little too low with your answer :\(');
+    counter++;
+  } else if (number > 2007) {
+    alert('Your answer is a little too hight :\(');
+    counter++;
+  } else if (number === NaN || number === null) {
+    alert('enter a number pleas');
+    counter++;
+  }else {
+    alert('I want to congradulate you on remembering the year I graduated.')
+
+  }
+}
+
+console.log('counter', counter);
+  alert('counter');
