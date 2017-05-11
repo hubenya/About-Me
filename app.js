@@ -52,25 +52,25 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     alert(user + ' It appears that you did not answer the question.');
   }
 */
-
 // here is where i added for loop this is a success
+// i have tried few thing to give user an error when entering text input
 var myFavNumber = 7;
 
 for (var i=0; i < 4; i++){
-  var answer = prompt('Do you know my favorite numner between 0 & 20?');
+  var answer = parseInt(prompt('Do you know my favorite numner between 0 & 10?'));
   console.log('number:' + answer);
   if (answer < myFavNumber) {
     alert('You are a little too low with your answer :\(');
   } else if (answer > myFavNumber) {
     alert('Your answer is a little too hight :\(');
-  } else if (myFavNumber === NaN || myFavNumber === null) {
-    alert('Enter a number please');
+    //this logic is not working
+  } else if (answer === NaN || answer === null) {
+    alert('Please enter a number please');
+    counter++;
   } else {
-    alert('You got it right my number is 7');
+    alert('You got it right my number is 7.');
     break;
   }
-
-
 }
 // here is where i added while loop this is a success
 var carName = ['toyota', 'dodge', 'acura'];
@@ -91,6 +91,9 @@ while(userAnswer < 6){
   if (userAnswer < 6){
     alert('You were so close but try again');
     counter++;
+    //after few hours i got this to work but not fully. this was part of our requirement
+  } else if (userAnswer > 6 && answer !== carName[i]) {
+    alert('It appears that you have tried over ' + counter + ' times and there are no more tries. Sorry!!!!');
   }
 console.log(answer);
 console.log(userAnswer);
