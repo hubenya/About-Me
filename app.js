@@ -52,7 +52,6 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     alert(user + ' It appears that you did not answer the question.');
   }
 */
-// this is my for loop using fav number brands.
 
 // here is where i added for loop this is a success
 var myFavNumber = 7;
@@ -66,31 +65,33 @@ for (var i=0; i < 4; i++){
     alert('Your answer is a little too hight :\(');
   } else if (myFavNumber === NaN || myFavNumber === null) {
     alert('Enter a number please');
+  } else {
+    alert('You got it right my number is 7');
     break;
-
   }
-}
 
+
+}
+// here is where i added while loop this is a success
 var carName = ['toyota', 'dodge', 'acura'];
 var userAnswer = 0;
+var counter = 1;
 
 while(userAnswer < 6){
   var answer = prompt('What car brans do you think I own?').toLowerCase();
   for (var i=0; i < carName.length; i++) {
     console.log(carName);
     if (carName[i] === answer) {
-      alert('you got it right!');
+      alert('Good guess, I do own ' + answer + '. It appears that you have tried ' + counter + '.');
       userAnswer = 6;
       break;
     }
   }
   userAnswer++;
   if (userAnswer < 6){
-    alert('try again');
+    alert('You were so close but try again');
+    counter++;
   }
 console.log(answer);
 console.log(userAnswer);
 }
-
-
-//console.log('counter', counter);
