@@ -53,50 +53,44 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
   }
 */
 // this is my for loop using fav number brands.
-/*
-var cars = ["honda", "toyota", "acura", "nissan"];
+
+// here is where i added for loop this is a success
+var myFavNumber = 7;
+
+for (var i=0; i < 4; i++){
+  var answer = prompt('Do you know my favorite numner between 0 & 20?');
+  console.log('number:' + answer);
+  if (answer < myFavNumber) {
+    alert('You are a little too low with your answer :\(');
+  } else if (answer > myFavNumber) {
+    alert('Your answer is a little too hight :\(');
+  } else if (myFavNumber === NaN || myFavNumber === null) {
+    alert('Enter a number please');
+    break;
+
+  }
+}
+
+var carName = ['toyota', 'dodge', 'acura'];
 var userAnswer = 0;
 
-while(userAnswer < 6) {
-  var cars = prompt('What is one car brand that you think I own?');
-  for (var i=0; i < cars.length; i++) {
-    console.log(cars);
-    if (cars[i] === userAnswer){
-      alert('You got it right!');
-      userAnswer + 1;
-      alert('Nice job! you know what my fav thing is!');
+while(userAnswer < 6){
+  var answer = prompt('What car brans do you think I own?').toLowerCase();
+  for (var i=0; i < carName.length; i++) {
+    console.log(carName);
+    if (carName[i] === answer) {
+      alert('you got it right!');
+      userAnswer = 6;
       break;
-
     }
   }
-  if (userAnswer !== cars) {
-  alert('Nope - you are wrong!');
-}
-}
-
-*/
-// here is where i added while loop
-var favNumber = 7;
-var counter =
-
-for (var i=0; i < 4; i++) {
-  var answer = prompt('Do you know my favorite numner?');
-
-
-  if (favNumber < 7) {
-    alert('You are a little too low with your answer :\(');
-    counter++;
-  } else if (favNumber > 7) {
-    alert('Your answer is a little too hight :\(');
-    counter++;
-  } else if (favNumber === NaN || favNumber === null) {
-    alert('enter a number pleas');
-    counter++;
-  }else {
-    alert('I want to congradulate you on guessing my favNumber. I can see that you have tried to guess this ' + counter + ' times.')
-
+  userAnswer++;
+  if (userAnswer < 6){
+    alert('try again');
   }
+console.log(answer);
+console.log(userAnswer);
 }
 
-console.log('counter', counter);
-  //alert('counter');
+
+//console.log('counter', counter);
