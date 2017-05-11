@@ -1,18 +1,27 @@
-'use strict' ;
-/*
+// //'use strict' ;
+function userFun() {
+
 var user = prompt('What is your name?');
   console.log('user:' + user);
   alert('Hi there, ' + user + ', I\'m going to ask you few question about me.');
+}
+userFun();
 
-var birthplace = prompt(user + ', this is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
+function birthplaceFun(){
+
+var birthplace = prompt(', this is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
   console.log('user birthplace:' + birthplace);
     if (birthplace === 'YES') {
     alert('Nice try, but I was born in Ukraine.');
     } else if (birthplace === 'NO') {
     alert('Greate Job!!! You are correct, I was born outside of US.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
     }
+  }
+  birthplaceFun();
+
+function movedToUsFun(){
 
 var movedToUs = prompt('This is a yes/no question just like previous. Take your best guess, do you think I moved to US before my 10th birthday?').toUpperCase();
   console.log('user movedToUs:' + movedToUs);
@@ -21,8 +30,13 @@ var movedToUs = prompt('This is a yes/no question just like previous. Take your 
     } else if (movedToUs === 'NO') {
     alert('Good Job!!! You guessed right.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
     }
+  }
+
+  movedToUsFun();
+
+  function highSchoolFun(){
 
 var highSchool = prompt('What year do you think I graduated from high school?  I will give you few hints 2001, 2007, 2015');
   console.log('user highSchool:' + highSchool);
@@ -31,8 +45,13 @@ var highSchool = prompt('What year do you think I graduated from high school?  I
     } else if (highSchool === '2001' || '2015') {
     alert('Nice try but I graduated in 2007.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
     }
+  }
+
+  highSchoolFun();
+
+  function kidsFun(){
 
 var kids = prompt('This is a yes/no question. Do you think I have kids?').toLowerCase();
   console.log('user kids:' + kids);
@@ -41,19 +60,27 @@ var kids = prompt('This is a yes/no question. Do you think I have kids?').toLowe
     } else if (kids === 'no') {
     alert('Nice try but I actually do.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
     }
+  }
+  kidsFun();
+
+  function funFactFun(){
 
 var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase();
   console.log('user funFact:' + funFact);
     if (funFact === 'fishing' && 'snowboarding') {
     alert('Nice try but I don\'t do either of them.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
   }
-*/
-// here is where i added for loop this is a success
-// i have tried few thing to give user an error when entering text input
+}
+  fuNFactFun();
+
+here is where i added for loop this is a success
+i have tried few thing to give user an error when entering text input
+function myFavNumberFun(){
+
 var myFavNumber = 7;
 
 for (var i=0; i < 4; i++){
@@ -72,7 +99,11 @@ for (var i=0; i < 4; i++){
     break;
   }
 }
-// here is where i added while loop this is a success
+}
+  myFavNumberFun();
+here is where i added while loop this is a success
+
+function carNameFun(){
 var carName = ['toyota', 'dodge', 'acura'];
 var userAnswer = 0;
 var counter = 1;
@@ -99,3 +130,5 @@ while(userAnswer < 6){
 console.log(answer);
 console.log(userAnswer);
 }
+}
+carNameFun();
