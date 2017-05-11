@@ -77,6 +77,7 @@ while(userAnswer < 6) {
 */
 // here is where i added while loop
 var favNumber = 7;
+var counter =
 
 for (var i=0; i < 4; i++) {
   var answer = prompt('Do you know my favorite numner?');
