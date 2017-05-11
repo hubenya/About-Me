@@ -51,44 +51,48 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     } else {
     alert(user + ' It appears that you did not answer the question.');
   }
+*/
+// this is my for loop using fav number brands.
+/*
+var cars = ["honda", "toyota", "acura", "nissan"];
+var userAnswer = 0;
 
-// this is my for loop using car brands.
-var favCarBrand = ['Toyota', 'Honda', 'RAM', 'Acura', 'Nissan', 'Tesla'];
-var answer = prompt('What is my favorite car maker brand?');
-var flag;
+while(userAnswer < 6) {
+  var cars = prompt('What is one car brand that you think I own?');
+  for (var i=0; i < cars.length; i++) {
+    console.log(cars);
+    if (cars[i] === userAnswer){
+      alert('You got it right!');
+      userAnswer + 1;
+      alert('Nice job! you know what my fav thing is!');
+      break;
 
-for (var i=0; i < favCarBrand.length; i++){
-  console.log('current thing:', favCarBrand[i]);
-  if (answer === favCarBrand[i]){
-    alert('Nice job! You know what my fav car brand is!');
-    flag = true;
-    break;
+    }
   }
-
+  if (userAnswer !== cars) {
+  alert('Nope - you are wrong!');
+}
 }
 
-if (!flag) {
-  alert('Nope - you are wrong!');
-}*/
+*/
 // here is where i added while loop
-var number;
-var counter = 1;
+var favNumber = 7;
 
-while (number !== 2007) {
-  number = parseInt(prompt('Do you remember what year I graduated from school? It was one of earlier questions.'));
-  //number = prompt('Do you rememner what year I graduated from school? It was one of the questions earlier.');
+for (var i=0; i < 4; i++) {
+  var answer = prompt('Do you know my favorite numner?');
 
-  if (number < 2007) {
+
+  if (favNumber < 7) {
     alert('You are a little too low with your answer :\(');
     counter++;
-  } else if (number > 2007) {
+  } else if (favNumber > 7) {
     alert('Your answer is a little too hight :\(');
     counter++;
-  } else if (number === NaN || number === null) {
+  } else if (favNumber === NaN || favNumber === null) {
     alert('enter a number pleas');
     counter++;
   }else {
-    alert('I want to congradulate you on remembering the year I graduated. I can see that you have tried to guess this ' + counter + ' times.')
+    alert('I want to congradulate you on guessing my favNumber. I can see that you have tried to guess this ' + counter + ' times.')
 
   }
 }
