@@ -93,7 +93,7 @@ while(userAnswer < 6){
     counter++;
     //after few hours i got this to work but not fully. this was part of our requirement
   } else if (userAnswer > 6 || answer !== carName[i]) {
-    alert('It appears that you have tried over ' + counter + ' times and there are no more tries. Sorry1!!!!');
+    alert('It appears that you have tried over ' + counter + ' times and there are no more tries. Sorry!!!');
     break;
   }
 console.log(answer);
