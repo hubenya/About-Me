@@ -64,7 +64,7 @@ for (var i=0; i < 4; i++){
   } else if (answer > myFavNumber) {
     alert('Your answer is a little too hight :\(');
     //this logic is not working
-  } else if (answer === NaN || answer === null) {
+  } else if (answer === NaN && answer === null) {
     alert('Please enter a number please');
     counter++;
   } else {
@@ -92,8 +92,9 @@ while(userAnswer < 6){
     alert('You were so close but try again');
     counter++;
     //after few hours i got this to work but not fully. this was part of our requirement
-  } else if (userAnswer > 6 && answer !== carName[i]) {
-    alert('It appears that you have tried over ' + counter + ' times and there are no more tries. Sorry!!!!');
+  } else if (userAnswer > 6 || answer !== carName[i]) {
+    alert('It appears that you have tried over ' + counter + ' times and there are no more tries. Sorry1!!!!');
+    break;
   }
 console.log(answer);
 console.log(userAnswer);
