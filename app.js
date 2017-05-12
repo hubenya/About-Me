@@ -4,14 +4,14 @@ var user = prompt('What is your name?');
   console.log('user:' + user);
   alert('Hi there, ' + user + ', I\'m going to ask you few question about me.');
 
-var birthplace = prompt(user + ', this is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
+var birthplace = prompt('This is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
   console.log('user birthplace:' + birthplace);
-    if (birthplace === 'YES') {
-    alert('Nice try, but I was born in Ukraine.');
-    } else if (birthplace === 'NO') {
+    if (birthplace === 'NO') {
     alert('Greate Job!!! You are correct, I was born outside of US.');
+    } else if (birthplace === 'YES') {
+    alert('Nice try, but I was born in Ukraine.');
     } else {
-    alert(user + ' It appears that you did not answer the question.');
+    alert(' It appears that you did not answer the question.');
     }
 
 var movedToUs = prompt('This is a yes/no question just like previous. Take your best guess, do you think I moved to US before my 10th birthday?').toUpperCase();
@@ -50,4 +50,4 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
     alert('Nice try but I don\'t do either of them.');
     } else {
     alert(user + ' It appears that you did not answer the question.');
-  }
+    }
