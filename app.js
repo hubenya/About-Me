@@ -9,12 +9,12 @@ userFun();
 
 function birthplaceFun(){
 
-var birthplace = prompt(', this is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
+var birthplace = prompt('This is a yes/no question.  Please answer with Yes or No. Was, I born in US?').toUpperCase();
   console.log('user birthplace:' + birthplace);
-    if (birthplace === 'YES') {
-    alert('Nice try, but I was born in Ukraine.');
-    } else if (birthplace === 'NO') {
+    if (birthplace === 'NO') {
     alert('Greate Job!!! You are correct, I was born outside of US.');
+  } else if (birthplace === 'YES') {
+    alert('Nice try, but I was born in Ukraine.');
     } else {
     alert(' It appears that you did not answer the question.');
     }
@@ -77,8 +77,8 @@ var funFact = prompt('Do you think I like fishing or snowboarding?').toLowerCase
 }
   fuNFactFun();
 
-here is where i added for loop this is a success
-i have tried few thing to give user an error when entering text input
+//here is where i added for loop this is a success
+//i have tried few thing to give user an error when entering text input
 function myFavNumberFun(){
 
 var myFavNumber = 7;
@@ -101,7 +101,7 @@ for (var i=0; i < 4; i++){
 }
 }
   myFavNumberFun();
-here is where i added while loop this is a success
+//here is where i added while loop this is a success
 
 function carNameFun(){
 var carName = ['toyota', 'dodge', 'acura'];
