@@ -1,4 +1,5 @@
-// //'use strict' ;
+'use strict' ;
+
 function userFun() {
 
 var user = prompt('What is your name?');
