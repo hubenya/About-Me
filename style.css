@@ -83,10 +83,7 @@ nav ul li {
   margin-top: 40px;
   padding: 0px 15px 0px 25px;
 }
-p {
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
+
 main {
   width: 960px;
   margin: 30px auto;
@@ -109,8 +106,9 @@ main p {
   font-family:monospace;
   font-size: 20px;
   color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+	margin-bottom: 5px;
+  /*padding-bottom: 20px;*/
   text-rendering: auto;
   background: #444 50%;
   opacity: 0.7;
