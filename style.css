@@ -46,6 +46,7 @@ table {
 	border-spacing: 0;
 }
 /* my css code starts here */
+
 a {
   text-decoration: none;
   color: #fff;
@@ -53,17 +54,51 @@ a {
 header {
   height: 100px;
   background: #444;
+
+  color: #fff;
+  padding: 5px;
+
   position: relative;
   z-index: 1;
+
 }
 header div {
   width: 960px;
   margin: 0 auto;
 }
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
 nav {
+
+  width: 100%;
+  padding: 3px;
   position: absolute;
   font-size: 25px;
   margin: 0px;
+  padding: -3px;
+  top: 0;
+}
+nav li {
+  display: inline-table;
+  padding: 0px 15px 0px 15px;
+}
+
+main {
+  margin-left: 30px;
+}
+
+main p {
+  font-size: 20px;
+  color: blue;
+  padding-bottom: 20px;
+  text-rendering: auto;
+  margin-bottom: 5px;
+  margin-left: 5px;
   z-index: 3;
 }
 h1 {
